@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jeu du pendu</title>
+	<meta charset='utf-8' />
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+	<h1>Jeu du pendu</h1>
+
+	<div id='gameContainer'>
+
+		<div id='resultSection'>
+
+			<div id='hangManImageContainer'>
+				
+				<span id='failuresCounter'>0/10 échecs</span>
+
+				<image
+					alt='Hang man image'
+					src='./images/0.jpg'
+					id='hangManImage'
+				/>
+
+			</div>
+
+			<div id='leftSubsection'>
+				<h2>Mots déjà essayés</h2>
+				<div id='triedLetters'>
+				</div>
+
+				<div id='hiddenWordContainer'>
+				</div>
+			</div>
+		</div>
+
+		<span id='winText'>GAGNÉ !</span>
+		<span id='loseText'>PERDU...</span>
+	</div>
+
+	<script src='./scripts/game.js'></script>
+</body>
+</html>
